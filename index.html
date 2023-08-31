@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <h1>Tigran Meliksetyants</h1>
+    </header>
+    
+    <main>
+        <section>
+            <div class="profile-section">
+                <div class="profile-picture">
+                    <img src="Tigran.jpg" alt="Tigran Meliksetyants" class="profile-photo">
+                </div>
+                <div class="contact-icons">
+                    <div class="contact-item">
+                        <a href="mailto:tigran338@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                        <span>tigran338@gmail.com</span>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <a href="tel:8184308187"><i class="fas fa-phone-alt" id="phone-icon"></i></a>
+                        <span>818-430-8187</span>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <a href="https://www.linkedin.com/in/tigran-meliksetyants-37ba63232/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <span>linkedin.com/in/tigran-meliksetyants</span>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <a href="https://github.com/tigran338" target="_blank"><i class="fab fa-github"></i></a>
+                        <span>github.com/tigran338</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>About Me</h2>
+            <div class="about-me-grid">
+                <div class="about-me-item">
+                    <span>👋</span>
+                    <p>I'm Tigran Meliksetyants, a computer science student passionate about technology. I'm skilled in C++, C#, Java, Python, SQL, Tableau, R, Unity, and Unreal Engine 5.</p>
+                </div>
+                <div class="about-me-item">
+                    <span>🎓</span>
+                    <p>Currently studying at California State University - Northridge, I also hold a Google Data Analytics Certificate from Coursera.</p>
+                </div>
+                <div class="about-me-item">
+                    <span>🔧</span>
+                    <p>I've worked on projects like a 2D side-scrolling game using Unreal Engine, a 3D Checkers game on Unity, a Tetris game in C#, and a Visual Calculator app in C# with a user-friendly GUI.</p>
+                </div>
+                <div class="about-me-item">
+                    <span>💼</span>
+                    <p>At Keysight Technologies in Calabasas, I interned and took on responsibilities such as configuring Ubuntu servers, deploying virtual machines and Docker, performing network tests via IxNetwork Virtual Edition, refining pytest scripts for various platforms, and contributing to the sonic-mgmt open-source project. In my previous roles as a Deli Clerk, Computer Science Tutor, and Sales Consultant, I further honed my communication and teamwork skills. I'm fluent in English and Russian.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Experience</h2>
+            <div id="workplaces"></div> <!-- This div will contain the workplaces generated from the xlsx -->
+        </section>
+        <!-- ... -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.8/xlsx.full.min.js"></script> <!-- Import the xlsx library -->
+        <script src="scripts.js"></script> <!-- Your script -->
+
+        <section>
+            <h2>Projects</h2>
+            <p>Details of the projects I've worked on.</p>
+        </section>
+        
+        <section>
+            <h2>Contact</h2>
+            <p>Get in touch with me here.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2023 by Me. Proudly created with passion.</p>
+    </footer>
+</body>
+</html>
