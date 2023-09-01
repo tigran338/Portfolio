@@ -396,3 +396,89 @@ section.contact-section {
     transform: translateY(-5px);  /* moves the card slightly up */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
+
+
+@media (max-width: 768px) {
+
+    section:nth-of-type(3)::after, 
+    section:nth-of-type(4)::after, 
+    .projects-section::after, 
+    .skills-section::after {
+        opacity: 0.05;  /* Making it more transparent */
+        font-size: 60px;  /* Adjusting the size */
+    }
+
+    .contact-icons {
+        display: flex;
+        flex-direction: column; /* stack the items */
+        align-items: center; /* center items horizontally */
+    }
+    
+    .contact-item {
+        width: 100%; /* take full width */
+        text-align: center; /* center text and icons */
+        margin-bottom: 20px; /* space between items */
+    }
+    
+    .contact-item a {
+        display: inline-block; 
+        margin: 5px 0; 
+        text-align: center; 
+    }
+    
+    /* You can also adjust other styles for mobile here. For example: */
+    h1 {
+        font-size: 2rem; /* Reducing font size for mobile */
+    }
+    
+    .profile-picture img {
+        width: 10rem; /* Reducing image width for mobile */
+    }
+    
+    .about-me-grid {
+        grid-template-columns: 1fr; /* Making it one column on mobile */
+    }
+    
+    .workplace-detail, .workplace-info {
+        flex-direction: column; /* Stacking elements vertically */
+        gap: 10px;
+    }
+    
+    .company-logo {
+        width: 15rem; /* Adjusting company logo size */
+        max-height: 10rem;
+    }
+    
+    header {
+        height: 15vh; /* Adjust header height */
+    }
+    
+    .contact-icons {
+        flex-direction: column; /* Stack icons vertically */
+        gap: 2rem; /* Adjust gap */
+    }
+    
+    .workplace-detail, .workplace-info, .date-container, .card-content, .card-content-wrapper {
+        flex-direction: column; /* Stack content vertically */
+        gap: 10px; /* Adjust gap */
+    }
+    
+    .skill-row {
+        justify-content: center; /* Center skill categories */
+    }
+    
+    .business-card {
+        flex-direction: column; /* Stack card content vertically */
+        align-items: center; /* Center items */
+        text-align: center; /* Center text */
+    }
+    
+    .card-content-wrapper {
+        flex-direction: column-reverse; /* Reverse the order so the photo appears on top */
+    }
+    
+    .card-photo-container {
+        padding: 0;
+        margin: 10px 0; /* Adjust the space around the photo */
+    }
+}
