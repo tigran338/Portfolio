@@ -1,21 +1,31 @@
-h1, h2, p {
+h1 {
+    font-size: 3rem; /* Adjust to your desired size */
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+
+h2 {
     margin-top: 2rem;
     margin-bottom: 0.5rem;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;  /* Use any preferred font-family */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: linear-gradient(to bottom, #f7f8fa, #ffffff); /* subtle gradient background */
+    height: 100vh;  /* makes sure gradient covers whole viewport height */
 }
 
+
 header {
+    background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 10vh; /* Adjust this height as needed */
-    background-color: #e9e9e9; /* Gives a slight background to the header */
+    background-color: #f4f4f4; /* Gives a slight background to the header */
 }
 
 main, footer {
@@ -26,13 +36,21 @@ main, footer {
 
 .profile-section {
     display: flex;
-    flex-direction: column; /* This will stack children vertically. */
+    flex-direction: column; 
     justify-content: center;
-    align-items: center; /* This will center children horizontally. */
+    align-items: center; 
+    background: linear-gradient(120deg, #f0f8ff, #e6e6fa);
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .profile-picture{
     margin-bottom: 1rem;
+}
+
+.profile-picture img {
+    width: 15rem;
+    height: auto; 
 }
 
 .contact-icons {
@@ -47,6 +65,25 @@ main, footer {
     cursor: pointer;
 }
 
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-item span {
+    text-align: center;
+}
+
+/* About me */
+
+section:nth-of-type(2) { /* Targeting the 2nd section (About Me) */
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+}
+
 .about-me-grid {
     display: grid;
     grid-template-columns: 1fr 1fr; /* 2 columns of equal width */
@@ -57,6 +94,36 @@ main, footer {
     display: flex;
     align-items: start;
     gap: 0.5rem;
+}
+
+/* Experience  */
+
+section:nth-of-type(3) {  /* Targeting the 3nd section (Experience) */
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+}
+
+section:nth-of-type(3)::before { 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(120deg, #e0f7fa, #e0e0e0);
+    z-index: -2; 
+}
+
+section:nth-of-type(3)::after {
+    content: "💼";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(4);
+    opacity: 0.1;
+    font-size: 100px;
+    z-index: -1;
 }
 
 #workplaces > div {
@@ -70,4 +137,262 @@ main, footer {
 #workplaces ul {
     margin: 10px 0;
     padding-left: 20px;
+}
+
+.workplace-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* space between logo and description */
+}
+
+.workplace-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+
+.content-left {
+    flex: 1;
+    padding-right: 20px; /* adjust as needed */
+}
+
+.content-right {
+    flex-basis: auto;
+    align-self: center;
+}
+
+.company-logo {
+    width: 20rem;  /* Desired width */
+    height: auto; /* Ensure height scales proportionally */
+    max-height: 15rem; /* Maximum height */
+
+    /* This will check if the height exceeds the max-height, and if it does, set the width proportionally */
+    object-fit: contain;
+    display: block; /* Ensures that width and height are respected */
+}
+
+
+/* Education */
+
+section:nth-of-type(4) { 
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+}
+
+section:nth-of-type(4)::before { 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(120deg, #ffd54f, #ffecb3); /* You can adjust this gradient */
+    z-index: -2;
+}
+
+section:nth-of-type(4)::after {
+    content: "🎓";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(4);
+    opacity: 0.1;
+    font-size: 100px;
+    z-index: -1;
+}
+
+.education-item-box {
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.date-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* ensure the container takes the full width */
+}
+
+.title-content {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* this will add ... if the title is too long */
+    margin-right: 20px; /* provides a little space between title and date */
+}
+
+/* Projects */
+.projects-section {
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.projects-section::before { 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(120deg, #d0d0d0, #c3c3c3); /* Turquoise gradient */
+    z-index: -2;
+}
+
+.projects-section::after {
+    content: "💡";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(4);
+    opacity: 0.1;
+    font-size: 100px;
+    z-index: -1;
+}
+
+.project-item-box {
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: linear-gradient(120deg, #40e0d0, #20b2aa); /* Turquoise gradient */
+}
+
+/* Skills */
+
+.skills-section {
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.skills-section::before { 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(120deg, #b8def1, #b8def1); /* Turquoise gradient */
+    z-index: -2;
+}
+
+.skills-section::after {
+    content: "🔧";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(3.5);
+    opacity: 0.1;
+    font-size: 100px;
+    z-index: -1;
+}
+
+/* Style for each skills category */
+.single-skill-category {
+    border: 1px solid #ccc; /* a light gray border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* subtle box shadow for a floating effect */
+    padding: 20px;
+    margin: 10px 0; /* some margin for spacing between categories */
+    border-radius: 5px; /* rounded corners for a softer look */
+    flex: 1;  /* this will ensure equal width when they are in the same row */
+    min-width: 45%; /* roughly half the container width, adjust based on your layout and preference */
+    display: flex;
+    flex-direction: column; /* stack content vertically */
+    justify-content: center; /* vertically center the content */
+}
+
+/* Styling for the skills rows - This will ensure your skills categories align well next to each other */
+.skill-row {
+    display: flex;
+    flex-wrap: wrap; /* This ensures that categories go to the next line if they don't fit side by side */
+    justify-content: space-between; /* This spaces out the skill categories equally */
+    align-items: stretch; /* this will ensure boxes in the same row have the same height */
+}
+
+
+/* Contact */
+/* Styling for the Contact section */
+
+/* If you have multiple sections and only want to target the "Contact" section, use an ID or specific class. For example: */
+section.contact-section {
+    background-color: #fdf1f1;
+    padding: 20px; /* adds space between the content and the section edges */
+    margin: 20px 0; /* adds space between this section and others */
+    border-radius: 10px; /* rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
+}
+
+
+.business-card::before { 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(120deg, #e9e3e3, #5d5f60); /* Turquoise gradient */
+    z-index: -2;
+}
+
+.business-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 80%; /* adjust width based on preference */
+    max-width: 600px; /* maximum width */
+    margin: 20px auto; /* center the card */
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* rounded corners */
+    padding: 20px;
+    background-color: #ffffff; /* white background, or choose another subtle color */
+}
+
+.card-header {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;  /* Pushes children to the ends */
+    gap: 15px;
+    margin-bottom: 10px; /* Adjust this to reduce the space between the header and the info */
+}
+
+/* Create a new container for the picture and the information */
+.card-content {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.card-content-wrapper {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; /* This will ensure the items start from the top */
+}
+
+.card-photo {
+    width: 100px;  /* Adjust width as desired */
+    height: auto; /* Ensure height matches width */
+    border-radius: 10%; /* Adjust for slight rounding, if preferred */
+}
+
+.card-contact-info {
+    flex: 1; /* Takes up as much space as it can, pushing the photo to the side */
+    padding-right: 20px; /* Or adjust to desired spacing between the info and the photo */
+}
+
+.card-photo-container {
+    padding-left: 20px; /* Or adjust to desired spacing between the info and the photo */
+    margin-top: 30px;  /* This will push the photo downwards. Adjust the value as desired. */
+}
+
+.business-card:hover {
+    transform: translateY(-5px);  /* moves the card slightly up */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }

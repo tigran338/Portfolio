@@ -7,61 +7,66 @@
     <link rel="stylesheet" href="styles.css">
     <title>My Portfolio</title>
 </head>
-<body>
-    <header>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <h1>Tigran Meliksetyants</h1>
-    </header>
-    
+<body>    
     <main>
         <section>
             <div class="profile-section">
+                <header>
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+                    <h1>Tigran Meliksetyants</h1>
+                </header>
+
                 <div class="profile-picture">
-                    <img src="Tigran.jpg" alt="Tigran Meliksetyants" class="profile-photo">
+                    <img src="Tigran.png" alt="Tigran Meliksetyants" class="profile-photo">
                 </div>
                 <div class="contact-icons">
                     <div class="contact-item">
                         <a href="mailto:tigran338@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-                        <span>tigran338@gmail.com</span>
+                        <a href="mailto:tigran338@gmail.com" target="_blank"><span>tigran338@gmail.com</span></a>
                     </div>
-                    
+                                    
                     <div class="contact-item">
                         <a href="tel:8184308187"><i class="fas fa-phone-alt" id="phone-icon"></i></a>
-                        <span>818-430-8187</span>
+                        <a href="tel:8184308187"><span>818-430-8187</span></a>
                     </div>
-                    
+                                    
                     <div class="contact-item">
                         <a href="https://www.linkedin.com/in/tigran-meliksetyants-37ba63232/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <span>linkedin.com/in/tigran-meliksetyants</span>
+                        <a href="https://www.linkedin.com/in/tigran-meliksetyants-37ba63232/" target="_blank"><span>linkedin.com/in/tigran-meliksetyants</span></a>
                     </div>
-                    
+                                    
                     <div class="contact-item">
                         <a href="https://github.com/tigran338" target="_blank"><i class="fab fa-github"></i></a>
-                        <span>github.com/tigran338</span>
+                        <a href="https://github.com/tigran338" target="_blank"><span>github.com/tigran338</span></a>
+                    </div>
+
+                    <div class="contact-item">
+                        <a href="https://www.google.com/maps/place/Van+Nuys,+CA+91401" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+                        <a href="https://www.google.com/maps/place/Van+Nuys,+CA+91401" target="_blank"><span>Van Nuys, CA 91401</span></a>
                     </div>
                 </div>
             </div>
         </section>
         <section>
             <h2>About Me</h2>
-            <div class="about-me-grid">
-                <div class="about-me-item">
-                    <span>👋</span>
-                    <p>I'm Tigran Meliksetyants, a computer science student passionate about technology. I'm skilled in C++, C#, Java, Python, SQL, Tableau, R, Unity, and Unreal Engine 5.</p>
+                <div class="about-me-grid">
+                    <div class="about-me-item">
+                        <span>👋</span>
+                        <p>Hi! I'm Tigran Meliksetyants from Van Nuys, CA. Diving into the world of computer science, I've honed skills in languages like C++, C#, Java, and Python. I've creatively channeled these skills into diverse projects, from a side-scrolling game using Unreal Engine to a unique 3D Checkers game on Unity. As someone deeply immersed in tech, I also keep pace with tools like SQL, Tableau, R, and the latest from Unity and Unreal Engine 5.</p>
+                    </div>
+                    <div class="about-me-item">
+                        <span>🎓</span>
+                        <p>My educational journey led me to California State University - Northridge where I'll soon hold a Bachelor's degree in Computer Science. I've ventured through computer systems, hardware, software design, data structures, and much more, boasting a GPA of 3.77. Alongside this, I've achieved a Google Data Analytics Certificate from Coursera, arming me with practical skills in spreadsheets, SQL, and data presentation.</p>
+                    </div>
+                    <div class="about-me-item">
+                        <span>💡</span>
+                        <p>My hands-on experiences range from developing a Tetris game in C# to a visual calculator app with a user-friendly GUI. Not stopping at personal projects, I've contributed to the sonic-mgmt open-source initiative during my internship at Keysight Technologies. Whether it's configuring Ubuntu servers, deploying Docker containers, or enhancing pytest scripts, I've done it with dedication and precision.</p>
+                    </div>
+                    <div class="about-me-item">
+                        <span>💼</span>
+                        <p>My professional journey started at DNS Electronic in Russia, leading me to Keysight Technologies in Calabasas. Whether it was configuring servers or refining pytest scripts, I've always embraced challenges. Having served roles from a Sales Consultant, Computer Science Tutor, to a Deli Clerk, my multifaceted experiences have enriched my communication and teamwork abilities. Bridging cultures, I comfortably communicate in both English and Russian.</p>
+                    </div>
                 </div>
-                <div class="about-me-item">
-                    <span>🎓</span>
-                    <p>Currently studying at California State University - Northridge, I also hold a Google Data Analytics Certificate from Coursera.</p>
-                </div>
-                <div class="about-me-item">
-                    <span>🔧</span>
-                    <p>I've worked on projects like a 2D side-scrolling game using Unreal Engine, a 3D Checkers game on Unity, a Tetris game in C#, and a Visual Calculator app in C# with a user-friendly GUI.</p>
-                </div>
-                <div class="about-me-item">
-                    <span>💼</span>
-                    <p>At Keysight Technologies in Calabasas, I interned and took on responsibilities such as configuring Ubuntu servers, deploying virtual machines and Docker, performing network tests via IxNetwork Virtual Edition, refining pytest scripts for various platforms, and contributing to the sonic-mgmt open-source project. In my previous roles as a Deli Clerk, Computer Science Tutor, and Sales Consultant, I further honed my communication and teamwork skills. I'm fluent in English and Russian.</p>
-                </div>
-            </div>
         </section>
         
         <section>
@@ -73,13 +78,63 @@
         <script src="scripts.js"></script> <!-- Your script -->
 
         <section>
-            <h2>Projects</h2>
-            <p>Details of the projects I've worked on.</p>
+            <h2>Education</h2>
+            <div id="educationDetails"></div> <!-- This div will contain the education details generated from the xlsx -->
+        </section>
+
+        <section>
+            <div id="projects" class="projects-section">
+                <h2>Projects</h2>
+            </div>
         </section>
         
         <section>
+            <div id="skills" class="skills-section">
+                <h2>Skills</h2>
+            </div>
+        </section>
+
+        <section class="contact-section">
             <h2>Contact</h2>
-            <p>Get in touch with me here.</p>
+            <div class="business-card">
+                
+                <div class="card-contact-info">
+
+                    <div class="card-header">
+                        <h3>Tigran Meliksetyants 🌐</h3>
+                    </div>
+
+                    <div class="card-contact-item">
+                        <a href="mailto:tigran338@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                        <a href="mailto:tigran338@gmail.com" target="_blank"><span>tigran338@gmail.com</span></a>
+                    </div>
+                                    
+                    <div class="card-contact-item">
+                        <a href="tel:8184308187"><i class="fas fa-phone-alt" id="phone-icon"></i></a>
+                        <a href="tel:8184308187"><span>818-430-8187</span></a>
+                    </div>
+                                    
+                    <div class="card-contact-item">
+                        <a href="https://www.linkedin.com/in/tigran-meliksetyants-37ba63232/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/tigran-meliksetyants-37ba63232/" target="_blank"><span>linkedin.com/in/tigran-meliksetyants</span></a>
+                    </div>
+                                    
+                    <div class="card-contact-item">
+                        <a href="https://github.com/tigran338" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/tigran338" target="_blank"><span>github.com/tigran338</span></a>
+                    </div>
+
+                    <div class="card-contact-item">
+                        <a href="https://www.google.com/maps/place/Van+Nuys,+CA+91401" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+                        <a href="https://www.google.com/maps/place/Van+Nuys,+CA+91401" target="_blank"><span>Van Nuys, CA 91401</span></a>
+                    </div>
+                </div>
+
+                <div class="card-photo-container">
+                    <img src="Tigran.jpg" alt="Tigran Meliksetyants" class="card-photo">
+                </div>
+                
+            </div>
         </section>
     </main>
     
