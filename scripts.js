@@ -112,26 +112,6 @@ fetch('./Resume.xlsx')
 
             projectsDiv.appendChild(projectDiv);
         });
-
-        // // Skills
-        // const skillsWorksheet = workbook.Sheets['Skills'];
-        // const skillsJson = XLSX.utils.sheet_to_json(skillsWorksheet);
-
-        // const skillsDiv = document.getElementById('skills'); // Ensure you have a div with id="skills" in your HTML
-
-        // skillsJson.forEach(skillCategory => {
-        //     const skillCategoryName = Object.keys(skillCategory)[0].trim(); // Get the first column name as skill category
-        //     const skillsList = Object.values(skillCategory); // Get the list of skills
-        //     const skillsFormatted = skillsList.map(skill => `<li>${skill.trim()}</li>`).join(''); // Format skills into a list
-
-        //     const skillCategoryDiv = document.createElement('div');
-        //     skillCategoryDiv.innerHTML = `
-        //         <h3>${skillCategoryName}</h3>
-        //         <ul>${skillsFormatted}</ul>
-        //     `;
-
-        //     skillsDiv.appendChild(skillCategoryDiv);
-        // });
         
         // Skills
         const skillsWorksheet = workbook.Sheets['Skills'];

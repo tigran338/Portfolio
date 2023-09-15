@@ -297,31 +297,38 @@ section:nth-of-type(4)::after {
 
 /* Style for each skills category */
 .single-skill-category {
-    border: 1px solid #ccc; /* a light gray border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* subtle box shadow for a floating effect */
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin: 10px 0; /* some margin for spacing between categories */
-    border-radius: 5px; /* rounded corners for a softer look */
-    flex: 1;  /* this will ensure equal width when they are in the same row */
-    min-width: 45%; /* roughly half the container width, adjust based on your layout and preference */
+    margin: 10px 0;
+    border-radius: 5px;
+    flex: 1;
+    min-width: 45%;
     display: flex;
-    flex-direction: column; /* stack content vertically */
-    justify-content: center; /* vertically center the content */
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the start (top) */
 }
 
-/* Styling for the skills rows - This will ensure your skills categories align well next to each other */
+
+.single-skill-category h3 {
+    margin-top: 0; /* Ensure the header is at the very top */
+    margin-bottom: 20px; /* Adjust as needed to give space between the header and the list */
+    text-align: initial; 
+}
+
+.single-skill-category ul {
+    padding: 0;
+    margin: 0; 
+}
+
 .skill-row {
     display: flex;
-    flex-wrap: wrap; /* This ensures that categories go to the next line if they don't fit side by side */
-    justify-content: space-between; /* This spaces out the skill categories equally */
-    align-items: stretch; /* this will ensure boxes in the same row have the same height */
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: stretch; /* Ensure all items stretch to the same height */
 }
-
-
 /* Contact */
-/* Styling for the Contact section */
 
-/* If you have multiple sections and only want to target the "Contact" section, use an ID or specific class. For example: */
 section.contact-section {
     background-color: #fdf1f1;
     padding: 20px; /* adds space between the content and the section edges */
