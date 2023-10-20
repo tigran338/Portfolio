@@ -99,7 +99,7 @@ fetch('./Resume.xlsx')
 
         projectJson.forEach(project => {
             const projectName = project.Name.trim();
-            const projectDescription = project.Description.trim();
+            const projectDescription = project.Description.trim().replace(/\n/g, '<br>');
             const githubLink = project['GitHub Link'].trim();
 
             const projectDiv = document.createElement('div');
